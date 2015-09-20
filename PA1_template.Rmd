@@ -8,9 +8,24 @@ output:
 
 ## Loading and preprocessing the data
 
+```{r, echo = TRUE}
+library(data.table)
+if (!file.exists(activity.zip)) {
+    stop("data source file activity.zip missing")
+}
+DT <- data.table(read.csv(file = "activity.csv", header = TRUE, na.strings = "NA",  stringsAsFactors = FALSE))
+DT$datedate <- as.Date(DT$date)
+DT$datefactor <- as.factor(DT$date)
 
+```  
 
 ## What is mean total number of steps taken per day?
+
+
+```{r}
+DT2 <- DT[complete.cases(DT)]
+
+
 
 
 
