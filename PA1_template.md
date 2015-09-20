@@ -65,10 +65,8 @@ answer2[which.max(answer2$mn),]
 ## 104      835 206.1698
 ```
 
-```r
+
 ## Imputing missing values
 
 
-
 ## Are there differences in activity patterns between weekdays and weekends?
-```

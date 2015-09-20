@@ -40,10 +40,10 @@ answer2 <- aggregate(DF$steps, by = list(DF$interval), FUN = mean)
 colnames(answer2) <- c("interval", "mn")
 plot(answer2$interval, answer2$mn, type = "l")
 answer2[which.max(answer2$mn),]
+```
 
 
 ## Imputing missing values
-
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
