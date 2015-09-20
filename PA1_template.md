@@ -67,6 +67,8 @@ answer2[which.max(answer2$mn),]
 
 
 ## Imputing missing values
+### Missing data will be replaced by column mean because I can't figure out
+### how to use row mean.
 
 
 ```r
