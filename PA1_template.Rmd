@@ -29,7 +29,7 @@ hist(answer, breaks = 100, col = "green")
 answer[is.na(answer)] <- 0
 mean(answer)
 median(answer)
-````
+```
 
 
 
@@ -44,6 +44,12 @@ answer2[which.max(answer2$mn),]
 
 
 ## Imputing missing values
+
+```{r, echo = TRUE}
+
+# number of missing values
+nrow(DT[is.na(steps)])
+
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
