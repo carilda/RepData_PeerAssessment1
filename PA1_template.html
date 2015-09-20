@@ -98,6 +98,9 @@ plot(answer2$interval, answer2$mn, type = &quot;l&quot;)</code></pre>
 </div>
 <div id="imputing-missing-values" class="section level2">
 <h2>Imputing missing values</h2>
+<pre class="r"><code># number of missing values
+nrow(DT[is.na(steps)])</code></pre>
+<pre><code>## [1] 2304</code></pre>
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>

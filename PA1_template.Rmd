@@ -50,6 +50,6 @@ answer2[which.max(answer2$mn),]
 # number of missing values
 nrow(DT[is.na(steps)])
 
-
+```
 
 ## Are there differences in activity patterns between weekdays and weekends?

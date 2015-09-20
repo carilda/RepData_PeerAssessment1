@@ -69,4 +69,13 @@ answer2[which.max(answer2$mn),]
 ## Imputing missing values
 
 
+```r
+# number of missing values
+nrow(DT[is.na(steps)])
+```
+
+```
+## [1] 2304
+```
+
 ## Are there differences in activity patterns between weekdays and weekends?
