@@ -33,9 +33,13 @@ median(answer)
 
 
 
-
 ## What is the average daily activity pattern?
 
+```{r, echo = TRUE}
+answer2 <- aggregate(DF$steps, by = list(DF$interval), FUN = mean)
+colnames(answer2) <- c("interval", "mn")
+plot(answer2$interval, answer2$mn, type = "l")
+answer2[which.max(answer2$mn),]
 
 
 ## Imputing missing values

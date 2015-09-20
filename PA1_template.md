@@ -45,13 +45,30 @@ median(answer)
 
 
 
-
 ## What is the average daily activity pattern?
 
 
+```r
+answer2 <- aggregate(DF$steps, by = list(DF$interval), FUN = mean)
+colnames(answer2) <- c("interval", "mn")
+plot(answer2$interval, answer2$mn, type = "l")
+```
 
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
+
+```r
+answer2[which.max(answer2$mn),]
+```
+
+```
+##     interval       mn
+## 104      835 206.1698
+```
+
+```r
 ## Imputing missing values
 
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
+```
